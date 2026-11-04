@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>TeaTime Café – Every Sip Has a Story</title>
+    <meta name="description" content="TeaTime Café, Madhapur, Hyderabad. Coffee, tea and fresh snacks.">
+
+    <!-- Google Fonts: Playfair Display (headings) + Poppins (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,500&family=Poppins:wght@400;500;600&display=swap">
+
+    <!-- Site styles -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#home">TeaTime Café</a>
+    <ul class="links" id="navLinks">
+      <li><a href="#home" data-link="home">Home</a></li>
+      <li><a href="#about" data-link="about">About</a></li>
+      <li><a href="#menu" data-link="menu">Menu</a></li>
+      <li><a href="#offers" data-link="offers">Offers</a></li>
+      <li><a href="#gallery" data-link="gallery">Gallery</a></li>
+      <li><a href="#contact" data-link="contact">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a class="icon-btn" href="#login" data-link="login" style="text-decoration:none;line-height:38px">Login</a>
+      <a class="icon-btn" href="#cart" data-link="cart" aria-label="Open cart" style="text-decoration:none;line-height:38px">Cart<span id="cartCount">0</span></a>
+      <button class="icon-btn" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+<!-- ================= HOME ================= -->
+<div data-page="home">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <h1>Good Coffee. Great Moments.</h1>
+        <p>Discover your perfect cup of happiness at TeaTime Café. Freshly brewed coffee, delicious tea, and unforgettable moments await you.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#menu">Explore Our Menu</a>
+          <a class="btn ghost" href="#contact">Visit Our Café</a>
+        </div>
+      </div>
+      <div class="cup" aria-hidden="true">
+        <!-- Decorative SVG cup with animated steam -->
+        <svg viewBox="0 0 300 280">
+          <g stroke="#D9B88F" stroke-width="6" stroke-linecap="round" fill="none">
+            <path class="steam" d="M100 70c-14-20 14-30 0-50"/><path class="steam" d="M150 70c-14-20 14-30 0-50"/><path class="steam" d="M200 70c-14-20 14-30 0-50"/>
+          </g>
+          <path d="M60 100h180v70a90 90 0 0 1-180 0z" fill="#F5EFE6"/>
+          <path d="M240 120h20a30 30 0 0 1 0 60h-26" fill="none" stroke="#F5EFE6" stroke-width="14"/>
+          <ellipse cx="150" cy="105" rx="90" ry="14" fill="#D9B88F"/>
+          <ellipse cx="150" cy="255" rx="130" ry="14" fill="#687653"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap split">
+      <div>
+        <h2>Welcome to TeaTime Café</h2>
+        <p>A cozy place where coffee lovers and tea enthusiasts come together. Every cup should bring comfort, happiness, and a little moment of relaxation.</p>
+        <a class="btn ghost" href="#about">Read our story</a>
+      </div>
+      <div class="panel"><h3>Open daily</h3><p style="margin:0">8:00 AM – 11:00 PM<br>Madhapur, Hyderabad</p></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2>Our Best Sellers</h2>
+      <div class="grid" id="bestSellers"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Explore Our Menu</h2>
+      <div class="grid" id="categoryCards"></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2>Special Offers</h2>
+      <div class="grid" id="homeOffers"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Why Choose Us?</h2>
+      <div class="grid" id="whyUs"></div>
+    </div>
+  </section>
+
+  <section class="band">
+    <div class="wrap">
+      <h2>Customer Reviews</h2>
+      <div class="grid" id="reviews"></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <div>
+        <h2>Visit Our Café</h2>
+        <p>Madhapur, Hyderabad<br>Every day, 8:00 AM – 11:00 PM</p>
+        <a class="btn" href="#contact">Get directions</a>
+      </div>
+      <div>
+        <h2>Stay in the loop</h2>
+        <p>Get new drinks and offers in your inbox.</p>
+        <form class="inline-form" id="newsletter">
+          <input type="email" required placeholder="you@example.com" aria-label="Email address">
+          <button class="btn" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= ABOUT ================= -->
+<div data-page="about">
+  <div class="wrap page-title"><h1>About Us</h1></div>
+  <section style="padding-top:16px">
+    <div class="wrap split">
+      <div>
+        <h2>Our Story</h2>
+        <p>TeaTime Café is a cozy place where coffee lovers and tea enthusiasts come together. We believe every cup should bring comfort, happiness, and a little moment of relaxation.</p>
+        <p>From freshly brewed coffee to refreshing iced teas, we serve delicious beverages and freshly prepared snacks using quality ingredients. Established in 2021.</p>
+        <p>Our café is designed for friends, families, students, and professionals who want to enjoy great drinks in a relaxing atmosphere.</p>
+      </div>
+      <div class="grid" style="grid-template-columns:1fr">
+        <div class="card"><h3>Our mission</h3><p>Serve comforting, quality drinks and snacks in a warm space for everyone.</p></div>
+        <div class="card"><h3>Our vision</h3><p>To be the neighbourhood spot where every sip has a story.</p></div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= MENU ================= -->
+<div data-page="menu">
+  <div class="wrap page-title">
+    <h1>Our Menu</h1>
+    <div class="filters" id="filters" role="group" aria-label="Filter menu by category"></div>
+  </div>
+  <div class="wrap" style="padding-bottom:64px"><div class="grid" id="menuGrid"></div></div>
+</div>
+
+<!-- ================= OFFERS ================= -->
+<div data-page="offers">
+  <div class="wrap page-title"><h1>Special Offers</h1></div>
+  <section style="padding-top:16px"><div class="wrap"><div class="grid" id="offersGrid"></div></div></section>
+</div>
+
+<!-- ================= GALLERY ================= -->
+<div data-page="gallery">
+  <div class="wrap page-title"><h1>Gallery</h1></div>
+  <section style="padding-top:16px"><div class="wrap"><div class="gallery" id="galleryGrid"></div></div></section>
+</div>
+
+<!-- ================= CONTACT ================= -->
+<div data-page="contact">
+  <div class="wrap page-title"><h1>Contact</h1></div>
+  <section style="padding-top:16px">
+    <div class="wrap split">
+      <div>
+        <p><strong>Address</strong><br>TeaTime Café, Madhapur, Hyderabad</p>
+        <p><strong>Phone</strong><br><a href="tel:+919876543210">+91 98765 43210</a></p>
+        <p><strong>Email</strong><br><a href="mailto:hello@teatimecafe.com">hello@teatimecafe.com</a></p>
+        <p><strong>Hours</strong><br>8:00 AM – 11:00 PM, every day</p>
+        <p><strong>Instagram</strong><br>@teatimecafe</p>
+        <h3>Facilities</h3>
+        <p class="muted">Free Wi-Fi · Indoor and outdoor seating · Charging points · Family-friendly · Takeaway · Birthday celebrations · Student-friendly</p>
+      </div>
+      <div class="panel">
+        <h3>Find us</h3>
+        <!-- Replace this paragraph with a Google Maps <iframe> embed for Madhapur -->
+        <p>Map placeholder: paste your Google Maps embed iframe here.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- ================= LOGIN / REGISTER ================= -->
+<div data-page="login">
+  <div class="wrap page-title"><h1>Welcome back</h1>
+    <div class="filters">
+      <button class="chip" id="tabLogin" aria-pressed="true">Login</button>
+      <button class="chip" id="tabRegister" aria-pressed="false">Register</button>
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:64px">
+    <!-- Front-end only demo: no real authentication -->
+    <form id="authForm">
+      <label id="nameField" hidden>Full name<input type="text" id="authName" autocomplete="name"></label>
+      <label>Email<input type="email" required autocomplete="email"></label>
+      <label>Password<input type="password" required minlength="6" autocomplete="current-password"></label>
+      <button class="btn" type="submit" id="authSubmit">Login</button>
+    </form>
+  </div>
+</div>
+
+<!-- ================= CART ================= -->
+<div data-page="cart">
+  <div class="wrap page-title"><h1>Your Cart</h1></div>
+  <div class="wrap" style="padding-bottom:64px" id="cartBox"></div>
+</div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap grid">
+    <div><h3>TeaTime Café</h3><p>Every Sip Has a Story.</p><p>Since 2021</p></div>
+    <div><h3>Visit</h3><p>Madhapur, Hyderabad<br>8:00 AM – 11:00 PM</p></div>
+    <div><h3>Contact</h3><p><a href="tel:+919876543210">+91 98765 43210</a><br><a href="mailto:hello@teatimecafe.com">hello@teatimecafe.com</a><br>@teatimecafe</p></div>
+  </div>
+  <div class="wrap"><p style="margin-top:28px;opacity:.7">© 2026 TeaTime Café. All rights reserved.</p></div>
+</footer>
+
+<!-- Toast notification (used by script.js) -->
+<div id="toast" role="status" aria-live="polite"></div>
+
+<!-- Site logic (loaded last so the DOM is ready) -->
+<script src="index.js"></script>
+</body>
+</html>
